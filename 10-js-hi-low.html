@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- นายสิปปภาส เกียรติประเสริฐ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    input Number : <input type="text" name="" id="num1">
+    <br>
+    <button onclick="hi_low()">Submit</button>
+    <br>
+    <br>
+    <p id="output"></p>
+    <script>
+        function hi_low() {
+        if(Number(document.getElementById('num1').value)<50)  {
+            document.getElementById('output').innerHTML = 'LOW'
+        }else{
+            document.getElementById('output').innerHTML = 'HI'
+        }
+    }
+    </script>
+</body>
+</html>
